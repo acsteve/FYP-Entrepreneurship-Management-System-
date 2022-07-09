@@ -1,0 +1,258 @@
+body {
+    font-family: "Lato", sans-serif;
+    background-color: gainsboro;
+}
+
+h2 {
+    color: #15317e;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: darkcyan;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+.sidebtn {
+    font-family: Verdana, sans-serif;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.1s;
+}
+
+    .sidebtn:hover {
+        color: white;
+        background-color: rgb(51, 203, 189, 0.91);
+    }
+
+.sidenav .closebtn {
+    position: absolute;
+    top: -2;
+    right: 10;
+    font-size: 35px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 8px;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+}
+
+
+span {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    min-height: 10%;
+}
+
+.content {
+    width: 100%;
+    min-height: 10%;
+    overflow: hidden;
+    border-radius: 5px;
+    display: flex;
+}
+
+.navbtn {
+    flex-basis: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.logo {
+    flex-basis: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+}
+
+    .logo h2 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        text-align: center;
+        font-size: 0.8em;
+        color: #15317e;
+    }
+
+.topdiv {
+    flex-basis: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+}
+
+.resize {
+    width: 120px;
+    height: 58.4px;
+}
+
+.maincont {
+    margin: auto;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    padding-top: 40px;
+    text-align: center;
+    width: 100%;
+    background-color: white;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 45%;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    text-align: left;
+}
+
+th {
+    background-color: rgb(51, 203, 189, 0.91);
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+th, td {
+    padding: 15px;
+    border: solid darkcyan;
+}
+
+.containerx {
+    border-radius: 5px;
+    padding: 30px;
+    margin: auto;
+    width: 50%;
+    height: 250px;
+    background: white;
+}
+
+#switch {
+    margin-top: 20px;
+    margin-bottom: -60px;
+    width: 10%;
+    border: solid #15317e;
+    border-radius: 5px;
+    background: #15317e;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+    #switch:hover {
+        box-shadow: 0 1px 3px 0 darkgrey,0 5px 10px 0 #15317e;
+    }
+
+.addbtn {
+    margin-top: 30px;
+    width: 10%;
+    border-radius: 5px;
+    border: solid #15317e;
+    background: #15317e;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+    .addbtn:hover {
+        box-shadow: 0 1px 3px 0 darkgrey,0 5px 10px 0 #15317e;
+    }
+
+.tbox input {
+    background: white;
+    width: 40%;
+    height: 50px;
+    outline: none;
+    border: 2px solid darkcyan;
+    padding-left: 5px;
+    border-radius: 3px;
+    font-size: 16px;
+    color: darkcyan;
+}
+
+    .tbox input[type=text]:focus {
+        border: 3px solid darkcyan;
+        border-radius: 3px;
+    }
+
+    .tbox input[type=password]:focus {
+        border: 1px solid blue;
+        border-radius: 3px;
+    }
+
+
+::placeholder {
+    color: darkcyan;
+    font-size: 16px;
+}
+
+.desc {
+    background: white;
+    width: 40%;
+    height: 80px;
+    outline: none;
+    border: 2px solid darkcyan;
+    margin-top: 15px;
+    padding-left: 5px;
+    border-radius: 3px;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    resize: none;
+}
+
+    .desc:focus {
+        border: 3px solid darkcyan;
+        border-radius: 3px;
+    }

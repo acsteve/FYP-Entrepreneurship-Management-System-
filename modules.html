@@ -1,0 +1,96 @@
+<html>
+<head>
+    <title>Online Modules</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/modules.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body onload="displayfunc()">
+
+    <div id="mySidenav" class="sidenav">
+        <a id="navstyle" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Entrepreneurship<br>Info</a>
+        <a href="#">Online<br>Modules</a>
+        <a href="#">Rental<br>Service</a>
+        <a href="#">Logout</a>
+    </div>
+
+
+    <div class="container">
+
+        <div class="content">
+
+            <div class="navbtn">
+                <span onclick="openNav()">&#9776;</span>
+            </div>
+
+
+
+            <div class="logo">
+                <img class="resize" src="css/pic/logo.png" />
+                <h2>Entrepreneurship Management</h2>
+
+            </div>
+
+
+
+            <div class="topdiv">
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="maincont">
+
+        <h2>Online Modules</h2>
+
+        <div id="modules" class="modulesdiv">
+
+            <table>
+
+                <tr>
+                    <th>Modules</th>
+                    <th>Capacity</th>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+        
+    </div>
+
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+    </script>
+
+</body>
+</html>
